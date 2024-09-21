@@ -1,0 +1,16 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+      ,[RequiredDate]
+      ,[ShippedDate]
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+      ,[ShipAddress]
+      ,[ShipCity]
+      ,[ShipRegion]
+      ,[ShipPostalCode]
+      ,[ShipCountry]
+  FROM [Northwind].[dbo].[Orders] where ShipName LIKE '%IN%'
